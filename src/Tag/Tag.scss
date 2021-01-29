@@ -1,0 +1,19 @@
+.Tag{
+  background-color: #9B9CAB;
+  display: inline-block;
+  width: 104px;
+  height: 24px;
+  text-align: center;
+  border-radius: 24px;
+  margin-right: 8px;
+  margin-bottom: 5px;
+  color: #FFFFFF;
+  vertical-align: center;
+
+  &__img, &__label{
+    vertical-align: center;
+    display: inline-block;
+    margin: 0 10px 5px 0;
+  }
+
+}

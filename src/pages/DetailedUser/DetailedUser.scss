@@ -1,0 +1,40 @@
+.DetailedUser{
+  &__ImageContainer{
+    display:inline-block;
+    margin: 0 48px 0 120px;
+    vertical-align: top;
+    height: 470px;
+  }
+
+  &__Image{
+    display:inline-block;
+    border-radius: 12px;
+  }
+
+  &__Description{
+    display:inline-block;
+    margin-right: 48px;
+    line-height: 18px;
+    height: 470px;
+  }
+  &__infoLabel{
+    color: #9B9CAB;
+    margin: 0;
+  }
+
+  &__infovalue{
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+  &__Maininfo{
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  &__Episods{
+    display: inline-block;
+    vertical-align:top;
+
+  }
+}
