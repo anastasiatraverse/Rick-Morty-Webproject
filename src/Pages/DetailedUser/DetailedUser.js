@@ -1,5 +1,5 @@
 import "./DetailedUser.scss";
-import Tag from "../../Tag";
+import Tag from "../../Components/Tag";
 import CardLogo from "../assets/Card_logo.png";
 
 const DetailedUser = () => {

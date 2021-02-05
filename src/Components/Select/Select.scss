@@ -1,0 +1,19 @@
+.Select{
+
+  padding: 17px 24px;
+  background-color: #F3F7FD;
+  border-radius: 12px;
+  width: 260px;
+  &:first-child{
+    margin-right: 40px;
+  }
+  &__selectedOption{}
+
+  &__label{
+    color:#3F8BFD;
+  }
+
+  &__value{
+    color: #0A0A28;
+  }
+}

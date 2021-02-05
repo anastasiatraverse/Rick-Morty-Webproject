@@ -1,8 +1,9 @@
 import React from "react";
 import { ReactComponent as RickMortylogo } from "../../assets/Logo.svg";
 import "./App.scss";
-import Tag from "../../Tag";
-import Portfolio from "../../Portfolio";
+import Tag from "../../Components/Tag";
+import Select from "../../Components/Select";
+import Cards from "../../Components/Cards";
 
 function App() {
   return (
@@ -16,16 +17,15 @@ function App() {
         <input placeholder="Search by name" className="App__input" />
         <button className="App__button">Find Character</button>
       </div>
-      <div className="App__select">
-        <div className="App__selectedOption">
-          <div className="App__label" />
-        </div>
+      <div className="App__filters">
+        <Select />
+        <Select />
       </div>
       <div className="App__portfolio">
-        <Portfolio />
-        <Portfolio />
-        <Portfolio />
-        <Portfolio />
+        <Cards />
+        <Cards />
+        <Cards />
+        <Cards />
       </div>
     </div>
   );
