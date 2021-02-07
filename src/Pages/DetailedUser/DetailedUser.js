@@ -88,6 +88,7 @@ const DetailedUser = () => {
           </div>
 
           <div className="DetailedUser__Maininfo">
+            {/*Decide not to break on components, because it used only there and no more*/}
             <p className="DetailedUser__infoLabel">Species</p>
             <p className="DetailedUser__infovalue">{character.species}</p>
             <p className="DetailedUser__infoLabel">Origin</p>
