@@ -1,4 +1,4 @@
-.Portfolio{
+.Cards{
   display: inline-block;
   background-color: #2A2A42;
   width: 19.6%;
@@ -7,15 +7,23 @@
   color: #FFFFFF;
   text-align: left;
   margin-right: 24px;
+  margin-bottom: 5%;
 
   &__img{
     //width: inherit;
-    width: 100%;
+    width: 252px;
+    height: 252px;
+    border-radius: 12px;
   }
 
   &__info{
     margin-left: 16px;
     margin-bottom: 24px;
+  }
+
+  &__info h1{
+    color: white;
+    text-decoration: none;
   }
 
   &__label{

@@ -4,16 +4,54 @@
   background-color: #F3F7FD;
   border-radius: 12px;
   width: 260px;
+  position: relative;
   &:first-child{
     margin-right: 40px;
   }
-  &__selectedOption{}
+
+  &__options{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #F3F7FD;
+  }
+
+  &__option{
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 8px;
+
+    &:hover{
+      background: #3f8bfd;
+    }
+  }
+
+  &__selectedOption{
+    position: relative;
+    &::after{
+      display: block;
+      height: 8px;
+      width: 12px;
+      right: 10px;
+      position: absolute;
+      top:calc(50% - 3px);
+      content: "";
+      background: url("../../assets/Vector.png");
+    }
+  }
 
   &__label{
     color:#3F8BFD;
   }
 
   &__value{
+    margin-left: 8px;
     color: #0A0A28;
   }
 }

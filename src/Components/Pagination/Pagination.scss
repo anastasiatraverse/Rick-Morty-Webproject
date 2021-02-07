@@ -1,0 +1,32 @@
+.Pagination{
+  display: flex;
+
+  &__page{
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    background: #2A2A42;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #BFC1D3;
+    margin-right: 8px;
+    &:last-of-type{
+      margin-right: 0;
+    }
+    &_active{
+      background: #BFC1D3;
+      color: #2A2A42;
+    }
+  }
+  &__arrow{
+    opacity: 0.3;
+    &_next{
+      transform: (180deg);
+    }
+    &_active{
+      opacity: 1;
+    }
+  }
+}

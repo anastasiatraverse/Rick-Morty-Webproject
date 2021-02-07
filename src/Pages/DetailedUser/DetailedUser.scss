@@ -1,4 +1,36 @@
 .DetailedUser{
+  &__head{
+    margin-left: 2%;
+    padding: 2%;
+  }
+
+  &__header{
+    width: 30%;
+    font-size: 8px;
+    display: inline-block;
+  }
+
+  &__haeder rect, svg{
+    width: 200px;
+    height: 60px;
+  }
+
+  &__links{
+    margin-left: 10%;
+    margin-bottom: 1%;
+    text-decoration: none;
+  }
+
+  &__link{
+    color: #3f8bfd;
+    text-decoration: none;
+    font-size: 30px;
+  }
+
+  &__link__active{
+    color: black;
+  }
+
   &__ImageContainer{
     display:inline-block;
     margin: 0 48px 0 120px;
@@ -17,6 +49,7 @@
     line-height: 18px;
     height: 470px;
   }
+
   &__infoLabel{
     color: #9B9CAB;
     margin: 0;
@@ -38,3 +71,4 @@
 
   }
 }
+
