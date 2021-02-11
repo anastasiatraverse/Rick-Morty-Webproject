@@ -1,5 +1,6 @@
 import "./DetailedUser.scss";
 import Tag from "../../Components/Tag";
+// TODO: fix import order, remove unused imorts. 
 import CardLogo from "../../assets/Card_logo.png";
 import { NavLink, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
@@ -9,6 +10,10 @@ import Header from "../../Components/Header";
 
 const DetailedUser = () => {
   const { id } = useParams();
+  // TODO: hmmmmmm.. I've seen that already in the code of Bogdan and Roman.
+  // Fist thing: "Loading..." can be kept as const
+  // Second thing: try to think of better ways. What will you do if you have 100 fields?
+  // Third thing: maybe one loader , in case character is still loading , would be enough
   const [character, setCharacter] = useState({
     name: "Loading...",
     status: "Loading...",
@@ -24,6 +29,7 @@ const DetailedUser = () => {
     error: undefined,
   });
 
+  // TODO: remove unused. Unused things are rubbish to the code
   const {
     name,
     status,
@@ -37,7 +43,7 @@ const DetailedUser = () => {
   } = character || {};
 
   useEffect(() => {
-    loadCharacters(id).then((r) => r);
+    loadCharacters(id).then((r) => r); // TODO: then is unneeded
   }, [character]);
 
   const loadCharacters = async (characterId) => {
@@ -46,7 +52,7 @@ const DetailedUser = () => {
     setCharacter(info);
   };
 
-  console.log(character);
+  console.log(character); // TODO: is this needed ?
 
   return character ? (
     <div>
@@ -96,16 +102,19 @@ const DetailedUser = () => {
             <p className="DetailedUser__infoLabel">Birthday</p>
             <p className="DetailedUser__infovalue">{character.created}</p>
             <p className="DetailedUser__infoLabel">Last Known location:</p>
+            {/* TODO: fetch info, don't hardcode it */}
             <p className="DetailedUser__infovalue">
               Earth (Replacement Dimension)
             </p>
             <p className="DetailedUser__infoLabel">First seen in:</p>
+             {/* TODO: fetch info, don't hardcode it. You can display fist episode in the episodes array as "First seen in" */}
             <p className="DetailedUser__infovalue">
               Edge of Tomorty: Rick, Die, Rickpeat
             </p>
           </div>
           <div className="DetailedUser__Episods">
             <p className="DetailedUser__infoLabel">Episodes:</p>
+            {/* TODO: fetch episode info, don't hardcode it */}
             <p className="DetailedUser__infovalue">
               S03E07: The Ricklantis Mixup
             </p>

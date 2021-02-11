@@ -10,7 +10,8 @@
   color: #FFFFFF;
   vertical-align: center;
 
-  &__img, &__label{
+  // TODO: separate into two lines
+  &__img, &__label{ 
     vertical-align: center;
     display: inline-block;
     margin: 0 10px 5px 0;

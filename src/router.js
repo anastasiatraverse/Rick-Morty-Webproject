@@ -5,6 +5,8 @@ import DetailedUser from "./Pages/DetailedUser";
 import character from "./assets/json/stubCharacters.json";
 
 const Router = () => {
+  // TODO: remove code if it's unneeded.
+  
   // const characterList = character.results;
   // const getCharacterById = (id) => {
   //   // console.log(id);

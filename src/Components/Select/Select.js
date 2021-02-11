@@ -1,6 +1,8 @@
 import "./Select.scss";
 import { useState } from "react";
 
+// TODO: import order
+
 const Select = ({ value, handleSelect, options, label }) => {
   const [isOpened, setIsOpened] = useState(false);
   const handleIsOpened = () => setIsOpened(!isOpened);
@@ -22,7 +24,7 @@ const Select = ({ value, handleSelect, options, label }) => {
   );
 
   const selectedOption = options?.find((option) => option.value === value);
-  console.log("> ", selectedOption);
+  console.log("> ", selectedOption); // TODO: we use console.log to debug, but better not to leave it in the committed code
   return (
     <div className="Select">
       <div className="Select__selectedOption" onClick={handleIsOpened}>
