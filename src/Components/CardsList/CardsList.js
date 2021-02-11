@@ -6,7 +6,7 @@ const CardsList = ({ charactersList }) => {
   const renderCharacter = (character) => (
     <Cards key={character.id} {...character} />
   );
-
+  // TODO: try to display the error, which comes from the api call
   return charactersList.length > 0 ? (
     <div className="CardsList">
       {charactersList.map(renderCharacter)}

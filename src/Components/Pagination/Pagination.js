@@ -3,6 +3,8 @@ import { useState } from "react";
 import { ReactComponent as Arrow } from "../../assets/arrow.svg";
 import _ from "lodash";
 
+// TODO: import order. Fix with eslint rule.
+
 const Pagination = ({ pages }) => {
   const [currentPage, setCurrentPage] = useState("");
   const setPagesArray = _(Array(pages))

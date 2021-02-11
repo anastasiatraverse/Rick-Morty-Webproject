@@ -5,9 +5,12 @@ import Select from "../../Components/Select";
 import Search from "../../Components/Search";
 import { useState, useEffect } from "react";
 import { getCharacters } from "../../API";
-import { useCallback } from "react/cjs/react.production.min";
+// TODO: why react/cjs/react.production.min ? Import from react.
+// but these imports are unneeded, delete them .
+import { useCallback } from "react/cjs/react.production.min"; 
 import Header from "../../Components/Header";
 import Pagination from "../../Components/Pagination";
+
 
 function Home() {
   const [name, setCharacterName] = useState("");

@@ -1,8 +1,13 @@
 import "./Cards.scss";
 import Tag from "../Tag";
 import { useHistory, Link } from "react-router-dom";
-import * as PropTypes from "prop-types";
+import * as PropTypes from "prop-types"; // TODO just: import PropTypes from "prop-types";
 
+// TODO: fix import order.  Solve this by adding a corresponding eslint rule.
+
+// TODO: clean up unused props
+// don't leave rubbish in your code :)
+// Solve this by adding an eslint rule
 const Cards = ({
   id,
   name,
@@ -44,6 +49,7 @@ const Cards = ({
 };
 
 Cards.propTypes = {
+  // TODO: delete it if uneeded, otherwise uncomment and fix
   // name: PropTypes.string.isRequired,
   // status: PropTypes.oneOf(["Unknown", "Alive", "Dead"]).isRequired,
   // gender: PropTypes.oneOf(["Male", "Female", "Unknown", "Genderless"]).isRequired,

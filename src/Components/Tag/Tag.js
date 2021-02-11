@@ -1,4 +1,5 @@
 import "./Tag.scss";
+// TODO: deadTag is definitely dead. Dont leave dead imports in the code!
 import deadTag from "../../assets/deadTag.png";
 
 const Tag = ({ className, title }) => {

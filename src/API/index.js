@@ -9,6 +9,7 @@ export const getCharacters = async (params) => {
 };
 
 export const getCharacter = async (id) => {
+  // TODO: remove if unused
   // const searchParams = new URLSearchParams();
   const response = await fetch(`${SERVER_URL}/character/${id.toString()}`);
   return response.json();
