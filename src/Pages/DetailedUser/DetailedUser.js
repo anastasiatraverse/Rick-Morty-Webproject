@@ -1,6 +1,5 @@
 import "./DetailedUser.scss";
 import Tag from "../../Components/Tag";
-import CardLogo from "../../assets/Card_logo.png";
 import { NavLink, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { getCharacter, getCharacters } from "../../API";
@@ -24,17 +23,7 @@ const DetailedUser = () => {
     error: undefined,
   });
 
-  const {
-    name,
-    status,
-    species,
-    gender,
-    origin,
-    location,
-    image,
-    created,
-    error,
-  } = character || {};
+  const { name, status, species, gender, origin, location, image, created, error } = character || {};
 
   useEffect(() => {
     loadCharacters(id).then((r) => r);
@@ -57,12 +46,7 @@ const DetailedUser = () => {
         </div>
 
         <div className="DetailedUser__links">
-          <NavLink
-            exact
-            to="/"
-            className="DetailedUser__link "
-            activeClassName="DetailedUser__link__active"
-          >
+          <NavLink exact to="/" className="DetailedUser__link " activeClassName="DetailedUser__link__active">
             Home
           </NavLink>
           <NavLink
@@ -96,28 +80,16 @@ const DetailedUser = () => {
             <p className="DetailedUser__infoLabel">Birthday</p>
             <p className="DetailedUser__infovalue">{character.created}</p>
             <p className="DetailedUser__infoLabel">Last Known location:</p>
-            <p className="DetailedUser__infovalue">
-              Earth (Replacement Dimension)
-            </p>
+            <p className="DetailedUser__infovalue">Earth (Replacement Dimension)</p>
             <p className="DetailedUser__infoLabel">First seen in:</p>
-            <p className="DetailedUser__infovalue">
-              Edge of Tomorty: Rick, Die, Rickpeat
-            </p>
+            <p className="DetailedUser__infovalue">Edge of Tomorty: Rick, Die, Rickpeat</p>
           </div>
           <div className="DetailedUser__Episods">
             <p className="DetailedUser__infoLabel">Episodes:</p>
-            <p className="DetailedUser__infovalue">
-              S03E07: The Ricklantis Mixup
-            </p>
-            <p className="DetailedUser__infovalue">
-              S01E10: Close Rick-counters of the Rick Kind
-            </p>
-            <p className="DetailedUser__infovalue">
-              S03E07: The Ricklantis Mixup
-            </p>
-            <p className="DetailedUser__infovalue">
-              S01E10: Close Rick-counters of the Rick Kind{" "}
-            </p>
+            <p className="DetailedUser__infovalue">S03E07: The Ricklantis Mixup</p>
+            <p className="DetailedUser__infovalue">S01E10: Close Rick-counters of the Rick Kind</p>
+            <p className="DetailedUser__infovalue">S03E07: The Ricklantis Mixup</p>
+            <p className="DetailedUser__infovalue">S01E10: Close Rick-counters of the Rick Kind </p>
           </div>
         </div>
       </div>

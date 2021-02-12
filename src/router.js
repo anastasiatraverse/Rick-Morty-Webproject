@@ -2,16 +2,7 @@ import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import Home from "./Pages/Home";
 import DetailedUser from "./Pages/DetailedUser";
 
-import character from "./assets/json/stubCharacters.json";
-
 const Router = () => {
-  // const characterList = character.results;
-  // const getCharacterById = (id) => {
-  //   // console.log(id);
-  //   // console.log(characterList);
-  //   return characterList.find((character) => character.id === id);
-  // };
-
   return (
     <BrowserRouter>
       <Switch>

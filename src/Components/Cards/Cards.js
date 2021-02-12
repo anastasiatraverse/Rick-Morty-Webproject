@@ -3,25 +3,11 @@ import Tag from "../Tag";
 import { useHistory, Link } from "react-router-dom";
 import * as PropTypes from "prop-types";
 
-const Cards = ({
-  id,
-  name,
-  status,
-  gender,
-  species,
-  type,
-  origin,
-  location,
-  image,
-  episode,
-  url,
-  created,
-}) => {
+const Cards = ({ id, name, status, gender, species, type, origin, location, image, episode, url, created }) => {
   const history = useHistory();
   const handleClick = () => history.push(`/character/${id}`);
   return (
     <div className="Cards">
-      {/* eslint-disable-next-line no-template-curly-in-string */}
       <Link to={`/character/${id}`}>
         <img src={image} className="Cards__img" alt="" />
       </Link>
@@ -44,9 +30,6 @@ const Cards = ({
 };
 
 Cards.propTypes = {
-  // name: PropTypes.string.isRequired,
-  // status: PropTypes.oneOf(["Unknown", "Alive", "Dead"]).isRequired,
-  // gender: PropTypes.oneOf(["Male", "Female", "Unknown", "Genderless"]).isRequired,
   name: PropTypes.string.isRequired,
   status: PropTypes.string.isRequired,
   gender: PropTypes.string.isRequired,

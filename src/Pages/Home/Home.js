@@ -5,9 +5,7 @@ import Select from "../../Components/Select";
 import Search from "../../Components/Search";
 import { useState, useEffect } from "react";
 import { getCharacters } from "../../API";
-import { useCallback } from "react/cjs/react.production.min";
 import Header from "../../Components/Header";
-import Pagination from "../../Components/Pagination";
 
 function Home() {
   const [name, setCharacterName] = useState("");
@@ -48,24 +46,10 @@ function Home() {
   return (
     <div className="Home">
       <Header className="Home__header" />
-      <Search
-        className="Home__searchField"
-        setValue={setCharacterName}
-        value={name}
-      />
+      <Search className="Home__searchField" setValue={setCharacterName} value={name} />
       <div className="Home__filters">
-        <Select
-          label="Status"
-          value={status}
-          handleSelect={setStatus}
-          options={statusOptions}
-        />
-        <Select
-          label="Gender"
-          value={gender}
-          handleSelect={setGender}
-          options={gendersOptions}
-        />
+        <Select label="Status" value={status} handleSelect={setStatus} options={statusOptions} />
+        <Select label="Gender" value={gender} handleSelect={setGender} options={gendersOptions} />
       </div>
       <div className="Home__portfolio">
         <CardsList charactersList={characters} />
