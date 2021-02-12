@@ -5,7 +5,7 @@ import Pagination from "../Pagination";
 const CardsList = ({ charactersList }) => {
   const renderCharacter = (character) => <Cards key={character.id} {...character} />;
 
-  return typeof charactersList === "undefined" || charactersList.length > 0 ? (
+  return charactersList.length > 0 ? (
     <div className="CardsList">
       {charactersList.map(renderCharacter)}
       {/*<Pagination pages={4} />*/}
