@@ -70,4 +70,13 @@
     display: inline-block;
     vertical-align: top;
   }
+
+  &__quotes{
+    display: inline-block;
+    text-align: right;
+    font-weight: bold;
+    font-size: 20px;
+    color: #3f8bfd;
+    width: 68%;
+  }
 }

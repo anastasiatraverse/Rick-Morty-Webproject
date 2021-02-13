@@ -3,32 +3,17 @@ import "./Home.scss";
 import CardsList from "../../Components/CardsList";
 import Select from "../../Components/Select";
 import Search from "../../Components/Search";
-import {
-  useState,
-  useEffect,
-} from "react";
+import { useState, useEffect } from "react";
 import { getCharacters } from "../../API";
 import Header from "../../Components/Header";
+import RandomQuotes from "../../Components/RandomQuotes";
 
 function Home() {
-  const [
-    name,
-    setCharacterName,
-  ] = useState("");
-  const [
-    queryName,
-    setQueryName,
-  ] = useState("");
-  const [gender, setGender] = useState(
-    ""
-  );
-  const [status, setStatus] = useState(
-    ""
-  );
-  const [
-    characters,
-    setCharacters,
-  ] = useState("");
+  const [name, setCharacterName] = useState("");
+  const [queryName, setQueryName] = useState("");
+  const [gender, setGender] = useState("");
+  const [status, setStatus] = useState("");
+  const [characters, setCharacters] = useState("");
 
   const statusOptions = [
     { value: "", label: "All Status" },
@@ -44,13 +29,9 @@ function Home() {
     },
   ];
 
-  const loadCharacters = async (
-    params
-  ) => {
+  const loadCharacters = async (params) => {
     try {
-      const items = await getCharacters(
-        params
-      );
+      const items = await getCharacters(params);
       setCharacters(items?.results);
     } catch (e) {
       console.log("Error", e);
@@ -68,29 +49,14 @@ function Home() {
   return (
     <div className="Home">
       <Header className="Home__header" />
-      <Search
-        className="Home__searchField"
-        setValue={setCharacterName}
-        value={name}
-      />
+      <RandomQuotes className="Home__quotes" />
+      <Search className="Home__searchField" setValue={setCharacterName} value={name} />
       <div className="Home__filters">
-        <Select
-          label="Status"
-          value={status}
-          handleSelect={setStatus}
-          options={statusOptions}
-        />
-        <Select
-          label="Gender"
-          value={gender}
-          handleSelect={setGender}
-          options={gendersOptions}
-        />
+        <Select label="Status" value={status} handleSelect={setStatus} options={statusOptions} />
+        <Select label="Gender" value={gender} handleSelect={setGender} options={gendersOptions} />
       </div>
       <div className="Home__portfolio">
-        <CardsList
-          charactersList={characters}
-        />
+        <CardsList charactersList={characters} />
       </div>
     </div>
   );

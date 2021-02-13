@@ -19,19 +19,6 @@
     border-radius: 12px;
   }
 
-  &__button {
-    color: white;
-    background-color: #3f8bfd;
-    border: none;
-    border-radius: 12px;
-    height: 56px;
-    width: 220px;
-    right: 220px;
-    position: absolute;
-    top: 30%;
-    //top: 70%;
-  }
-
   &__DetailedUser {
     display: inline-block;
     width: 600px;
@@ -45,12 +32,4 @@
       rgba(228, 232, 238, 0.6);
   }
 
-  &__DetailedUser .Search__button {
-    display: none;
-    position: inherit;
-    height: 56px;
-    width: 200px;
-    right: 0;
-    top: 10px;
-  }
 }

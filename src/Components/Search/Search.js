@@ -20,9 +20,6 @@ const Search = ({
         value={value}
         onChange={handleChange}
       />
-      <button className="Search__button">
-        Find Character
-      </button>
     </div>
   );
 };
