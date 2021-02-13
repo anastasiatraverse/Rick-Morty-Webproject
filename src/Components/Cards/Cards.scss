@@ -9,6 +9,8 @@
   margin-right: 24px;
   margin-bottom: 5%;
 
+
+
   &__img {
     //width: inherit;
     width: 252px;
@@ -21,9 +23,13 @@
     margin-bottom: 24px;
   }
 
+  &__info a{
+    text-decoration: none !important;
+  }
   &__info h1 {
     color: white;
     text-decoration: none;
+
   }
 
   &__label {
