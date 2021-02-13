@@ -1,6 +1,5 @@
 import "./RandomQuotes.scss";
 import { useEffect, useState } from "react";
-// import _ from "lodash";
 
 const RandomQuotes = ({ className }) => {
   const quotesList = [
@@ -21,8 +20,6 @@ const RandomQuotes = ({ className }) => {
   ];
 
   var [quote, setQuote] = useState("");
-
-  // setQuote(quotesList[0]);
 
   const selectQuote = () => {
     const selectedQuote = quotesList[Math.floor(Math.random() * quotesList.length)];
