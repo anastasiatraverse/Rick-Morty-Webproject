@@ -43,10 +43,5 @@
   "devDependencies": {
     "husky": "^5.0.9",
     "prettier": "^2.2.1"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run prettify"
-    }
   }
 }
