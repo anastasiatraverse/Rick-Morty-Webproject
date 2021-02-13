@@ -1,4 +1,8 @@
 .CardsList {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+
   &__404 {
     color: white;
     font-size: 20px;
