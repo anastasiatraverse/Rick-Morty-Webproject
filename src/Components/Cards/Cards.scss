@@ -1,37 +1,37 @@
-.Cards{
+.Cards {
   display: inline-block;
-  background-color: #2A2A42;
+  background-color: #2a2a42;
   width: 19.6%;
   height: 520px;
   border-radius: 12px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: left;
   margin-right: 24px;
   margin-bottom: 5%;
 
-  &__img{
+  &__img {
     //width: inherit;
     width: 252px;
     height: 252px;
     border-radius: 12px;
   }
 
-  &__info{
+  &__info {
     margin-left: 16px;
     margin-bottom: 24px;
   }
 
-  &__info h1{
+  &__info h1 {
     color: white;
     text-decoration: none;
   }
 
-  &__label{
+  &__label {
     margin: 16px 0 0;
-    color: #BFC1D3;
+    color: #bfc1d3;
   }
 
-  &__value{
-    margin: 0
+  &__value {
+    margin: 0;
   }
 }

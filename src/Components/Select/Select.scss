@@ -1,25 +1,24 @@
-.Select{
-
+.Select {
   padding: 17px 24px;
-  background-color: #F3F7FD;
+  background-color: #f3f7fd;
   border-radius: 12px;
   width: 260px;
   position: relative;
-  &:first-child{
+  &:first-child {
     margin-right: 40px;
   }
 
-  &__options{
+  &__options {
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
     padding: 0;
     margin: 0;
-    background-color: #F3F7FD;
+    background-color: #f3f7fd;
   }
 
-  &__option{
+  &__option {
     list-style-type: none;
     text-decoration: none;
     padding: 0;
@@ -27,31 +26,31 @@
     line-height: 50px;
     padding: 0 8px;
 
-    &:hover{
+    &:hover {
       background: #3f8bfd;
     }
   }
 
-  &__selectedOption{
+  &__selectedOption {
     position: relative;
-    &::after{
+    &::after {
       display: block;
       height: 8px;
       width: 12px;
       right: 10px;
       position: absolute;
-      top:calc(50% - 3px);
+      top: calc(50% - 3px);
       content: "";
       background: url("../../assets/Vector.png");
     }
   }
 
-  &__label{
-    color:#3F8BFD;
+  &__label {
+    color: #3f8bfd;
   }
 
-  &__value{
+  &__value {
     margin-left: 8px;
-    color: #0A0A28;
+    color: #0a0a28;
   }
 }

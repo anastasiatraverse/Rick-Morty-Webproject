@@ -1,29 +1,66 @@
 import "./Cards.scss";
 import Tag from "../Tag";
-import { useHistory, Link } from "react-router-dom";
+import {
+  useHistory,
+  Link,
+} from "react-router-dom";
 import * as PropTypes from "prop-types";
 
-const Cards = ({ id, name, status, gender, species, type, origin, location, image, episode, url, created }) => {
+const Cards = ({
+  id,
+  name,
+  status,
+  gender,
+  species,
+  type,
+  origin,
+  location,
+  image,
+  episode,
+  url,
+  created,
+}) => {
   const history = useHistory();
-  const handleClick = () => history.push(`/character/${id}`);
+  const handleClick = () =>
+    history.push(`/character/${id}`);
   return (
     <div className="Cards">
       <Link to={`/character/${id}`}>
-        <img src={image} className="Cards__img" alt="" />
+        <img
+          src={image}
+          className="Cards__img"
+          alt=""
+        />
       </Link>
       <div className="Cards__info">
         <Link to={`/character/${id}`}>
-          <h1 onClick={handleClick}>{name}</h1>
+          <h1 onClick={handleClick}>
+            {name}
+          </h1>
         </Link>
-        <Tag className="Cards__tag" title={gender} />
+        <Tag
+          className="Cards__tag"
+          title={gender}
+        />
 
-        <Tag className="Cards__tag" title={status} />
+        <Tag
+          className="Cards__tag"
+          title={status}
+        />
 
-        <p className="Cards__label">Last known location:</p>
-        <p className="Cards__value">Post-Apocalyptic Earth</p>
+        <p className="Cards__label">
+          Last known location:
+        </p>
+        <p className="Cards__value">
+          Post-Apocalyptic Earth
+        </p>
 
-        <p className="Cards__label">First seen in:</p>
-        <p className="Cards__value">Rickmancing the Stone</p>
+        <p className="Cards__label">
+          First seen in:
+        </p>
+        <p className="Cards__value">
+          Rickmancing the Stone
+        </p>
       </div>
     </div>
   );

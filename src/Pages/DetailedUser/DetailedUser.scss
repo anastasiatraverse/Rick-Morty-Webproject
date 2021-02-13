@@ -1,74 +1,73 @@
-.DetailedUser{
-  &__head{
+.DetailedUser {
+  &__head {
     margin-left: 2%;
     padding: 2%;
   }
 
-  &__header{
+  &__header {
     width: 30%;
     font-size: 8px;
     display: inline-block;
   }
 
-  &__haeder rect, svg{
+  &__haeder rect,
+  svg {
     width: 200px;
     height: 60px;
   }
 
-  &__links{
+  &__links {
     margin-left: 10%;
     margin-bottom: 1%;
     text-decoration: none;
   }
 
-  &__link{
+  &__link {
     color: #3f8bfd;
     text-decoration: none;
     font-size: 30px;
   }
 
-  &__link__active{
+  &__link__active {
     color: black;
   }
 
-  &__ImageContainer{
-    display:inline-block;
+  &__ImageContainer {
+    display: inline-block;
     margin: 0 48px 0 120px;
     vertical-align: top;
     height: 470px;
   }
 
-  &__Image{
-    display:inline-block;
+  &__Image {
+    display: inline-block;
     border-radius: 12px;
   }
 
-  &__Description{
-    display:inline-block;
+  &__Description {
+    display: inline-block;
     margin-right: 48px;
     line-height: 18px;
     height: 470px;
   }
 
-  &__infoLabel{
-    color: #9B9CAB;
+  &__infoLabel {
+    color: #9b9cab;
     margin: 0;
   }
 
-  &__infovalue{
+  &__infovalue {
     margin: 0;
     margin-bottom: 16px;
   }
 
-  &__Maininfo{
+  &__Maininfo {
     display: inline-block;
     margin-right: 20px;
   }
 
-  &__Episods{
+  &__Episods {
     display: inline-block;
-    vertical-align:top;
-
+    vertical-align: top;
   }
 }
-

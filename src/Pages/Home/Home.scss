@@ -1,18 +1,18 @@
-.Home{
-  &__header{
+.Home {
+  &__header {
     margin-left: 25%;
   }
 
-  &__filters{
-    display:flex;
+  &__filters {
+    display: flex;
     justify-content: center;
     margin-top: 30px;
   }
 
-  &__portfolio{
+  &__portfolio {
     margin-top: 64px;
-    width:100%;
-    background-color: #0A0A28;
+    width: 100%;
+    background-color: #0a0a28;
     padding: 80px 60px 176px 60px;
   }
 }
